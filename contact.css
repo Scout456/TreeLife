@@ -75,7 +75,7 @@ table {
   align-items: center;
   border-radius: 0 30% 30% 0;
   /* To style dropdown menu 20% is top left top right 0 bottom right 0 bottom left 60%*/
-  transition: left .9s;
+  transition: left .5s;
   /* Makes smooth slide of navbar menu.  Cubic-bezier makes a custom transition slow-fast */
 }
 
@@ -111,7 +111,7 @@ table {
 
 .line:hover{
 background-image: linear-gradient(to right,orange,white);
-transform: rotate(10deg);
+
 }
 
 /* Animates the hamburger icon.  .change will be affected with JS. 405deg makes it spin*/
