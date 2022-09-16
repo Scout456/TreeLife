@@ -1,0 +1,587 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*End of CSS reset------------------------------------------------------*/
+
+
+
+
+ body{
+  background-image: url("pics/treeBody2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+
+}
+
+
+.mainContainer{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  opacity: .88;
+  font-family: 'Roboto Slab';
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 20em;
+
+}
+
+
+
+.service-emergency{
+  text-align: center;
+
+}
+
+.emergencyService{
+  color: red;
+  font-weight: bold;
+}
+
+.callUs{
+  color: green;
+  font-weight: bold;
+}
+
+.treeLifeIconAndEmergency{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+  line-height: 1.2em;
+  font-size:100%;
+}
+
+.horiz-nav-list{
+  display: none;
+  }
+
+
+/*Beginning of hamburger menu-----------------------------------------------------*/ 
+
+/*To place dropdown menu*/
+.navbar {
+  width: 250px;
+  height: 100%;
+  z-index: 1;
+  background-image: url("pics/treeLifePic5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  /* Hides the navbar 0 to see it*/
+  display: flex;
+  /* To align content in middle of dropdown menu*/
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 30% 30% 0;
+  /* To style dropdown menu 20% is top left top right 0 bottom right 0 bottom left 60%*/
+  transition: left .9s;
+  /* Makes smooth slide of navbar menu.  Cubic-bezier makes a custom transition slow-fast */
+}
+
+/* To move navbar menu from right to left*/
+.change {
+  left: 0;
+}
+
+
+.hamburger-menu {
+  width: 35px;
+  height: 30px;
+  /*background-color: red; /*Temporary background to see hamburger icon*/
+  position: fixed;
+  /* Places Hamburger icon*/
+  top: 4px;
+  left: 20px;
+  cursor: pointer;
+  display: flex;
+  /* Will separate the bars for the hamburger icon*/
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  /*Will be 100% width of parent element which is 35px*/
+  height: 3px;
+  background-image: linear-gradient(to right, white,orange);
+  transition: all 0.8s;
+  /* Makes smoother transition from hamburger to X*/
+}
+
+.line:hover{
+background-image: linear-gradient(to right,orange,white);
+transform: rotate(10deg);
+}
+
+/* Animates the hamburger icon.  .change will be affected with JS. 405deg makes it spin*/
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+  /*Makes a X*/
+
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-8px, -6px);
+  /*Makes a X*/
+
+}
+
+
+
+/* The ul */
+.nav-list {
+  text-align: right;
+}
+
+/* li*/
+.nav-item {
+  list-style-type: none;
+  margin: 25px;
+}
+
+/* Anchors. This is the  parent element to navlink::before and after*/
+.nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 0;
+  /*added space for line*/
+}
+
+/*To make lines for hover effect*/
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  /* Both lines are in the same spot*/
+  transform: scaleX(0);
+  /* To hide the lines*/
+  transition: transform 0.5s;
+  /* Makes hover on lines smoother*/
+
+}
+
+/* To separate both lines one on top one on bottom*/
+.nav-link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.nav-link::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/*End of Hamburger menu----------------------------------------------------*/
+
+ .feedback{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2em;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 1em;
+  text-align: center;
+  margin: 1em;
+  background-image: linear-gradient(whitesmoke, #0EAF00);
+  color:black;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  opacity: .85;
+ }
+
+ 
+
+ .image-gallery{
+  background-color:#0EAF00;
+  width: 100vw;
+  padding: 1em;
+ }
+
+  .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ }
+
+ .fadeDown .images{
+  width: 280px;
+  border-radius: 5px;
+  height: 230px;
+  object-fit: cover;
+  cursor: pointer;
+ }
+
+
+
+ /*Image modal--------------------------------------------------*/
+
+.modal {
+z-index: 10;
+width: 100vw;
+height: 100vh;
+left: 0;
+top: 0;
+position: fixed;
+background-color: rgb(0, 0, 0, 0.9);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.no-display {
+display: none;
+}
+
+
+/*End of modal--------------------------------------------------*/
+
+ 
+
+ .foot{
+  background-image: linear-gradient(#0EAF00, green);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+  padding: 1.2em;
+
+  
+ }
+
+ #phone{
+  line-height: 1em;
+  padding: 2em;
+ }
+
+  .tree-life-email{
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+ }
+
+ .tree-life-email:hover{
+  color:lightgray;
+ }
+
+ #logoTree{
+  width: 70%;
+  padding: 1em;
+ }
+
+ #address-copyright{
+  line-height: 1em;
+  padding: 1em;
+ }
+
+
+
+ 
+
+
+
+
+
+/*CSS for intersection Observer--------------------*/
+
+/*Sets text so won't be seen*/
+.fadeDown {
+   transform: translateY(-50px);
+   opacity: 0;
+   transition-duration: 1s;
+   transition-timing-function: linear;
+ }
+/*Shows text with JS intersection Observer*/
+ .in-view {
+     transform: none;
+     opacity: 1;
+ }
+
+
+
+
+
+
+
+
+
+
+
+/* Media querys -----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Slab';
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 10em;
+
+   }
+
+   
+body{
+  background-image: url("pics/treeBody2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160em;
+
+}
+
+
+
+   .hamburger-menu {
+    display: none;
+   }
+
+   .treeLifeIconAndEmergency{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+     padding: 1em;
+    
+   }
+
+   .iconTree{
+    width: 20%;
+    
+   }
+
+
+     .iconImage{
+       width: 80%;
+     }
+
+   .service-emergency{
+    font-size: 1em;
+    line-height: 1.1em;
+    width: 20%;
+    
+    
+     
+   }
+
+   .horiz-nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    gap: .5em;
+    padding: 1em;
+    font-size: 1.2em;
+    width: 100%;
+    height: 7em;
+    
+   
+    
+
+  }
+
+  .horiz-nav-link{
+  text-decoration: none;
+  color: whitesmoke;
+  padding: .5em;
+  background-color:green;
+  border: 1px solid tan;
+  transition: 1s;
+  order:solid #000 3px;
+  border-top-left-radius:70% 60% ;
+  border-bottom-right-radius:70% 60%;
+  -moz-border-top-left-radius:70% 50%;
+  -moz-border-bottom-right-radius:70% 50%;
+
+  }
+
+  .horiz-nav-link:hover{
+     background-color: tan;
+     border: 1px solid green;
+     color:black;
+     font-weight: bold;
+  }
+
+   .feedback{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2em;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1em;
+  text-align: center;
+  margin: 1em;
+  background-image: linear-gradient(whitesmoke, #0EAF00);
+  color:black;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  opacity: .85;
+ }
+
+
+
+ .image-gallery{
+  background-color:#0EAF00;
+  padding: 1em;
+ }
+
+
+
+  .column{
+  display: grid;
+  grid-template-columns:repeat(3, 30%);
+  }
+
+
+
+  .fadeDown .images{
+  width: 260px;
+  border-radius: 5px;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+ }
+
+
+
+
+/*
+.section img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s ease-in-out;
+}
+
+.section img:hover{
+  transform: scale(1.1);
+}
+*/
+
+ 
+
+ .foot{
+  background-image: linear-gradient(#0EAF00, green);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3em;
+  height: 25em;
+  padding: 1.2em;
+ }
+
+ #phone{
+  line-height: 1em;
+  padding: 2em;
+ }
+
+ #logoTree{
+  width: 90%;
+  padding: 1em;
+ }
+
+ #address-copyright{
+  line-height: 1em;
+  padding: 1em;
+ }
+
+
+
+
+
+
+}
+
+
+
+
