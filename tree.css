@@ -267,6 +267,7 @@ body{
 
  .foot{
   background-image: linear-gradient(#0EAF00, green);
+  width: 100vw;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -277,6 +278,7 @@ body{
  }
 
  #phone{
+  font-size: 2.3vw;
   line-height: 1em;
   padding: 2em;
  }
@@ -292,13 +294,15 @@ body{
  }
 
  #logoTree{
-  width: 70%;
+  width: 30vw;
   padding: 1em;
  }
 
- .address-copyright{
+ #address-copyright{
+  font-size: 2.3vw;
   line-height: 1em;
   padding: 1em;
+  
  }
 
 
@@ -536,7 +540,7 @@ background-image: linear-gradient(to right,orange,white);
      display: flex;
      justify-content: space-between;
      align-items: center;
-    padding: 1em;
+     padding: 1em;
     
    }
 
@@ -552,7 +556,6 @@ background-image: linear-gradient(to right,orange,white);
      }
 
    .service-emergency{
-    font-size: 1em;
     line-height: 1.1em;
     width: 20%;
     font-size: 1.5vw;
@@ -743,9 +746,11 @@ background-image: linear-gradient(to right,orange,white);
   padding: 1.2em;
  }
 
- .phone{
+ /*.phone{
+  
   line-height: 1em;
   padding: 2em;
+  
  }
 
  .logoTree{
@@ -756,7 +761,7 @@ background-image: linear-gradient(to right,orange,white);
  .address-copyright{
   line-height: 1em;
   padding: 1em;
- }
+ }*/
 
  
 
