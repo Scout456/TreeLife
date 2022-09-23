@@ -267,7 +267,6 @@ body{
 
  .foot{
   background-image: linear-gradient(#0EAF00, green);
-  width: 100vw;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -278,8 +277,7 @@ body{
  }
 
  #phone{
-  font-size: 2.3vw;
-  line-height: 1em;
+   line-height: 1em;
   padding: 2em;
  }
 
@@ -294,12 +292,11 @@ body{
  }
 
  #logoTree{
-  width: 30vw;
+  width: 70%;
   padding: 1em;
  }
 
  #address-copyright{
-  font-size: 2.3vw;
   line-height: 1em;
   padding: 1em;
   
