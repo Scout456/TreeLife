@@ -734,6 +734,7 @@ background-image: linear-gradient(to right,orange,white);
 
  .foot{
   background-image: linear-gradient(#0EAF00, green);
+  width: 100vw;
   color: whitesmoke;
   display: flex;
   flex-direction: row;
@@ -743,8 +744,10 @@ background-image: linear-gradient(to right,orange,white);
   padding: 1.2em;
  }
 
- /*.phone{
-  
+
+
+ #phone{
+  font-size: 2vw;
   line-height: 1em;
   padding: 2em;
   
@@ -755,10 +758,11 @@ background-image: linear-gradient(to right,orange,white);
   padding: 1em;
  }
 
- .address-copyright{
+ #address-copyright{
+  font-size: 2vw;
   line-height: 1em;
   padding: 1em;
- }*/
+ }
 
  
 
