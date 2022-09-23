@@ -6,12 +6,16 @@ menuIcon.addEventListener("click", () => {
 })
 
 
+
 /*Intersection observer fade in*/
+
+
 
   const observerOptions = {
        root: null,
-       threshold: 0.3,   
+       threshold: 0.5,   
    };
+
 
 const observer = new IntersectionObserver(entries => {
        entries.forEach(entry => {
@@ -22,9 +26,11 @@ const observer = new IntersectionObserver(entries => {
        });
    }, observerOptions);
 
-window.addEventListener('DOMContentLoaded', (event) => { 
+window.addEventListener('DOMContentLoaded', (event) => {
 
 const sections =Array.from(document.getElementsByClassName('section'));
+
+
 
 for (let section of sections) {
   observer.observe(section);
@@ -33,3 +39,7 @@ for (let section of sections) {
 });
 
 /*---------------------------------------------------------------------------------------*/
+
+
+
+    

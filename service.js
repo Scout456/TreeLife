@@ -11,8 +11,8 @@ menuIcon.addEventListener("click", () => {
 const allSections = document.querySelectorAll("section");
 
 const options = {
-  root: null,
-  threshold: 0.4,
+  
+  threshold: 0.5,
 }
 
 const sectionObserver = new IntersectionObserver(callback, options);
@@ -25,13 +25,13 @@ document.querySelectorAll(".left-column").forEach(column => {
   column.classList.add("hidden-left");
 })
 
-/*document.querySelectorAll(".left-column-right").forEach(column => {
-  column.classList.add("hidden-left-right");
-})*/
+
 
 document.querySelectorAll(".right-column").forEach(column => {
 column.classList.add("hidden-right");
 })
+
+
 
 function callback(entries, observer){
   const [entry] = entries;

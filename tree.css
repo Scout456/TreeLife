@@ -59,7 +59,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 75em;
+  height:140vh;
 
 }
 
@@ -76,6 +76,8 @@ body{
   height: 20em;
 
 }
+
+
 
 
 
@@ -109,25 +111,29 @@ body{
   }
 
   .main-testimonial{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     text-align: left;
     background-image: url("pics/treeBody2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 55%;
+    
 
     
   }
 
   .testimonial{
     width: 80%;
-    background-color: whitesmoke;
+    background-color:white;
     border-radius: 5px;
-    margin:2em;
+    margin:1em;
     padding: .5em;
     line-height: 1.2em;
+    font-size: 1.1em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -163,6 +169,7 @@ body{
   }
 
   .youTube{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,29 +177,31 @@ body{
   }
 
   .video-roger{
-    width: 80%;
-    height: 15em;
+    width: 80vw;
+    height: 80vh;
     border-radius: 5px;
+    margin-bottom: 1em;
   }
 
   .twoPicks{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     margin-top: 2em;
+    padding: 1em;
     background-image: linear-gradient(#0EAF00, green);
-    height: 20em;
+    width: 100%;
   }
 
  .cranePic{
-   width: 95%;
+  width: 60vw;
   border-radius: 5px;
-  padding-left: 1.1em;
+
  }
 
  .pic-truck{
-  width: 100%;
+  width: 60vw;
   border-radius: 5px;
 
  }
@@ -501,6 +510,9 @@ background-image: linear-gradient(to right,orange,white);
 
 /* Media querys -----------------------------------------------------------------------------*/
 
+
+
+
 @media screen and (min-width: 768px) {
 .mainContainer{
   display: flex;
@@ -524,8 +536,7 @@ background-image: linear-gradient(to right,orange,white);
      display: flex;
      justify-content: space-between;
      align-items: center;
-     
-     padding: 1em;
+    padding: 1em;
     
    }
 
@@ -536,13 +547,17 @@ background-image: linear-gradient(to right,orange,white);
 
 
      .iconImage{
-       width: 80%;
+       width: 18vw;
+       
      }
 
    .service-emergency{
     font-size: 1em;
     line-height: 1.1em;
     width: 20%;
+    font-size: 1.5vw;
+    
+
     
     
      
@@ -558,8 +573,9 @@ background-image: linear-gradient(to right,orange,white);
     gap: .5em;
     padding: 1em;
     font-size: 1.2em;
-    width: 100%;
+    width: 60vw;
     height: 7em;
+    
     
    
     
@@ -569,7 +585,7 @@ background-image: linear-gradient(to right,orange,white);
   .horiz-nav-link{
   text-decoration: none;
   color: whitesmoke;
-  padding: .5em;
+  padding: 1.1vw;
   background-color:green;
   border: 1px solid tan;
   transition: .5s;
@@ -578,6 +594,7 @@ background-image: linear-gradient(to right,orange,white);
   border-bottom-right-radius:70% 60%;
   -moz-border-top-left-radius:70% 50%;
   -moz-border-bottom-right-radius:70% 50%;
+
 
   }
 
@@ -592,32 +609,30 @@ background-image: linear-gradient(to right,orange,white);
 
 
 
-
-
-   
-
-    .main-testimonial{
+  .main-testimonial{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    padding: 1em;
+    padding: 2em;
     background-image: url("pics/treeBody2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
 
     
   }
 
     .testimonial{
-    width: 400px;
-    height: 290px;
+    width: 100%;
+    padding: 1em;
     background-color: whitesmoke;
     border-radius: 5px;
-    line-height: 1.3em;
+    line-height: 1.2em;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -625,6 +640,7 @@ background-image: linear-gradient(to right,orange,white);
     margin-left: auto;
     margin-right: auto;
     margin: .5em;
+    
     
   }
 
@@ -643,31 +659,34 @@ background-image: linear-gradient(to right,orange,white);
 
   .video-roger{
     margin: .5em;
-    height: 290px;
-    width: 400px;
+    height: 100vh;
+    width: 100%;
+    margin: .5em;
     border-radius: 5px;
   }
 
     .twoPicks{
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 2em;
-    height: 13em;
     background-image: linear-gradient(#0EAF00, green);
     
   }
 
    .cranePic{
-   width: 90%;
+   width:40vw;
+   height: 20vw;
    border-radius: 5px;
   
  }
 
  .pic-truck{
-  width: 100%;
-  padding-right: 1em;
+  width: 40vw;
+  height: 20vw;
+
   border-radius: 5px;
   
  }

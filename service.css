@@ -291,10 +291,7 @@ color: whitesmoke;
   transform: translateX(-100%);
 }
 
-/*.hidden-left-right{
-  opacity: 0;
-  transform: translateX(100%);
-}*/
+
 
 .hidden-right{
   opacity: 0;
