@@ -374,7 +374,7 @@ body{
    
   }
 
-  /*.horiz-nav-link{
+  .horiz-nav-link{
   text-decoration: none;
   color: whitesmoke;
   padding: .5em;
@@ -393,7 +393,7 @@ body{
      border: 1px solid green;
      color:black;
      font-weight: bold;
-  }*/
+  }
 
  
 
