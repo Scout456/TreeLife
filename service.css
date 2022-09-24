@@ -259,16 +259,16 @@ width: 80%;
 border-radius: 5px;
 padding: 1em;
 color: whitesmoke;
-font-size: 1.2em;
+font-size: 1.1em;
 }
 
 .title-service{
   padding-bottom: 1em;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #our-service{
-  line-height: 1.3em;
+  line-height: 1em;
   text-align: center;
 }
 
@@ -452,6 +452,31 @@ font-size: 1.2em;
      color:black;
      font-weight: bold;
   }
+
+  
+.mainService{
+margin-top: 2em;
+text-align: center;
+background-image: linear-gradient(#0EAF00, green);
+margin-left: auto;
+margin-right: auto;
+width: 80vw;
+border-radius: 5px;
+padding: 1em;
+color: whitesmoke;
+font-size: 1.1em;
+}
+
+.title-service{
+  padding-bottom: 1em;
+  font-size: 2.4vw;
+}
+
+#our-service{
+  line-height: 2.4vw;
+  font-size: 2.2vw;
+  text-align: center;
+}
   
   
  .foot{
