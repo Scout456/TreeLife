@@ -12,7 +12,7 @@ const allSections = document.querySelectorAll("section");
 
 const options = {
   
-  threshold: 0.5,
+  threshold: 0.1,
 }
 
 const sectionObserver = new IntersectionObserver(callback, options);

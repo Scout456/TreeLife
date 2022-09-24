@@ -275,7 +275,9 @@ font-size: 1.1em;
 /*Works with Intersection Observer in JS ------------------------------------*/
 .content{
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 2em;
   padding: 2em;
   
@@ -304,9 +306,7 @@ font-size: 1.1em;
   
 }
 
-/*.left-column-right{
-  transition: all 1.5s ease-in-out;
-}*/
+
 
 .right-column{
   transition: all 1.5s ease-in-out;
@@ -319,6 +319,9 @@ font-size: 1.1em;
   padding: 1.5em;
   background-color: #0EAF00;
   text-align: center;
+  margin-left: .2em;
+  width: 10em;
+  transform: skew(10deg);
   border-radius: 5px;
   font-size: 4vw;
   
@@ -454,17 +457,32 @@ font-size: 1.1em;
   }
 
   
-.mainService{
-margin-top: 2em;
-text-align: center;
-background-image: linear-gradient(#0EAF00, green);
-margin-left: auto;
-margin-right: auto;
-width: 80vw;
-border-radius: 5px;
-padding: 1em;
-color: whitesmoke;
-font-size: 1.1em;
+   .mainService{
+    margin-top: 2em;
+    text-align: center;
+    background-image: linear-gradient(#0EAF00, green);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    border-radius: 5px;
+    padding: 1em;
+    color: whitesmoke;
+    font-size: 1.1em;
+}
+
+
+  .services{
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  padding: 1.5em;
+  background-color: #0EAF00;
+  text-align: center;
+  margin-left: .6em;
+  width: 10em;
+  transform: skew(10deg);
+  border-radius: 5px;
+  font-size: 4vw;
+  
 }
 
 .title-service{
@@ -482,18 +500,19 @@ font-size: 1.1em;
  .foot{
   background-image: linear-gradient(#0EAF00, green);
   color: whitesmoke;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 3em;
-  height: 25em;
   padding: 1.2em;
  }
 
  #phone{
   line-height: 1em;
+  font-size: 2vw;
   padding: 2em;
  }
 
@@ -503,6 +522,7 @@ font-size: 1.1em;
  }
 
  #address-copyright{
+  font-size: 2vw;
   line-height: 1em;
   padding: 1em;
  }
