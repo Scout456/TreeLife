@@ -339,6 +339,7 @@ body{
     
    }
 
+   
    .iconTree{
     width: 20%;
     
@@ -346,11 +347,11 @@ body{
 
 
      .iconImage{
-       width: 100%;
+      width: 18vw
      }
 
    .service-emergency{
-    font-size: 1em;
+    font-size: 1.5vw;
     line-height: 1.1em;
     width: 20%;
     }
@@ -368,7 +369,7 @@ body{
     gap: .5em;
     padding: 1em;
     font-size: 1.2em;
-    width: 100%;
+    width: 60vw;
     height: 7em;
     
    
@@ -377,7 +378,7 @@ body{
   .horiz-nav-link{
   text-decoration: none;
   color: whitesmoke;
-  padding: .5em;
+  padding: 1.1vw;
   background-color:green;
   border: 1px solid tan;
   transition: 1s;
@@ -388,6 +389,7 @@ body{
 
   }
 
+ 
   .horiz-nav-link:hover{
      background-color: tan;
      border: 1px solid green;
