@@ -412,31 +412,32 @@ body{
   padding: 1em;
   }
 
-  .foot{
+   .foot{
   background-image: linear-gradient(#0EAF00, green);
   color: whitesmoke;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 3em;
   padding: 1.2em;
-
-  
  }
 
  #phone{
   line-height: 1em;
+  font-size: 2vw;
   padding: 2em;
  }
 
  #logoTree{
-  width: 70%;
+  width: 90%;
   padding: 1em;
  }
 
  #address-copyright{
+  font-size: 2vw;
   line-height: 1em;
   padding: 1em;
  }
