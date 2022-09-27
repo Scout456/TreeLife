@@ -11,8 +11,8 @@ menuIcon.addEventListener("click", () => {
 const allSections = document.querySelectorAll("section");
 
 const options = {
-  
-  threshold: 0.1,
+  root:null,
+  threshold: 0,
 }
 
 const sectionObserver = new IntersectionObserver(callback, options);
