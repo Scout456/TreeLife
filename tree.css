@@ -314,12 +314,13 @@ body{
   width: 250px;
   height: 100%;
   z-index: 1;
+  background-color: #0EAF00;
   background-image: url("pics/treeLifePic5.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: -300px;
+
   /* Hides the navbar 0 to see it*/
   display: flex;
   /* To align content in middle of dropdown menu*/
