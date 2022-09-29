@@ -418,11 +418,11 @@ body{
     display: none;
    }
 
+  
    .treeLifeIconAndEmergency{
      display: flex;
      justify-content: space-between;
      align-items: center;
-     
      padding: 1em;
     
    }
@@ -434,17 +434,16 @@ body{
 
 
      .iconImage{
-       width: 80%;
+       width: 18vw;
      }
 
    .service-emergency{
-    font-size: 1em;
+    font-size: 1.5vw;
     line-height: 1.1em;
     width: 20%;
-    
-    
-     
-   }
+    }
+
+
 
    .horiz-nav-list{
     display: flex;
@@ -456,8 +455,8 @@ body{
     gap: .5em;
     padding: 1em;
     font-size: 1.2em;
-    width: 100%;
-    height: 7em;
+    width: 60vw;
+    height: 30vh;
     
    
     
@@ -467,7 +466,7 @@ body{
   .horiz-nav-link{
   text-decoration: none;
   color: whitesmoke;
-  padding: .5em;
+  padding: 1.1vw;
   background-color:green;
   border: 1px solid tan;
   transition: 1s;
@@ -493,7 +492,7 @@ body{
   align-items: center;
   line-height: 1.2em;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 2.5vw;
   padding: 1em;
   text-align: center;
   margin: 1em;
@@ -523,58 +522,55 @@ body{
 
 
   .fadeDown .images{
-  width: 260px;
+  width: 27vw;
   border-radius: 5px;
-  height: 250px;
+  height: 45vh;
+  object-fit: cover;
+  cursor: pointer;
+ }
+
+ #main.image{
+  width: 40vw;
+  border-radius: 5px;
+  height: 60vh;
   object-fit: cover;
   cursor: pointer;
  }
 
 
 
-
-/*
-.section img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: .3s ease-in-out;
-}
-
-.section img:hover{
-  transform: scale(1.1);
-}
-*/
-
- 
-
  .foot{
   background-image: linear-gradient(#0EAF00, green);
+  width: 100%;
   color: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 3em;
-  height: 25em;
-  padding: 1.2em;
- }
+  }
 
  #phone{
+  font-size: 2vw;
   line-height: 1em;
   padding: 2em;
  }
 
- #logoTree{
+ .logoTree{
   width: 90%;
   padding: 1em;
  }
 
  #address-copyright{
+  font-size: 2vw;
   line-height: 1em;
   padding: 1em;
  }
+
+
+
+ 
+
 
 
 
