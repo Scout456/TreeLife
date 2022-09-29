@@ -57,8 +57,8 @@ body{
   background-image: url("pics/treeBody2.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 75em;
+  background-size:calc();
+  height: 100vh;
 
 }
 
@@ -394,7 +394,6 @@ background-image: linear-gradient(to right,orange,white);
      display: flex;
      justify-content: space-between;
      align-items: center;
-     
      padding: 1em;
     
    }
@@ -406,17 +405,14 @@ background-image: linear-gradient(to right,orange,white);
 
 
      .iconImage{
-       width: 80%;
+       width: 18vw;
      }
 
    .service-emergency{
-    font-size: 1em;
+    font-size: 1.5vw;
     line-height: 1.1em;
     width: 20%;
-    
-    
-     
-   }
+     }
 
    .horiz-nav-list{
     display: flex;
@@ -428,7 +424,7 @@ background-image: linear-gradient(to right,orange,white);
     gap: .5em;
     padding: 1em;
     font-size: 1.2em;
-    width: 100%;
+    width: 60vw;
     height: 7em;
     
    
@@ -439,7 +435,7 @@ background-image: linear-gradient(to right,orange,white);
   .horiz-nav-link{
   text-decoration: none;
   color: whitesmoke;
-  padding: .5em;
+  padding: 1.1vw;
   background-color:green;
   border: 1px solid tan;
   transition: 1s;
@@ -458,6 +454,10 @@ background-image: linear-gradient(to right,orange,white);
      font-weight: bold;
   }
 
+  .feedback{
+    font-size: 4vw;
+  }
+
   .customerFeedback{
   line-height: 1.3em;
   padding: 1em;
@@ -473,7 +473,9 @@ background-image: linear-gradient(to right,orange,white);
   .customerQuote-one{
   background-image: linear-gradient(green, #0EAF00);
   color: whitesmoke;
-  padding: 1em;
+  padding: 1vw;
+  line-height: 2.2vw;
+  font-size: 2vw;
   border-radius: 5px;
   flex: 1;
   align-self: stretch;
@@ -483,7 +485,9 @@ background-image: linear-gradient(to right,orange,white);
   .customerQuote-two{
   background-image: linear-gradient(green, #0EAF00);
   color: whitesmoke;
-  padding: 1em;
+  padding: 1vw;
+  line-height: 2.2vw;
+  font-size: 2vw;
   border-radius: 5px;
   flex: 1;
   align-self: stretch;
@@ -492,7 +496,9 @@ background-image: linear-gradient(to right,orange,white);
   .customerQuote-three{
   background-image: linear-gradient(green, #0EAF00);
   color: whitesmoke;
-  padding: 1em;
+  padding: 1vw;
+  line-height: 2.2vw;
+  font-size: 2vw;
   border-radius: 5px;
   flex: 1;
   align-self: stretch;
@@ -511,9 +517,11 @@ background-image: linear-gradient(to right,orange,white);
   }
 
   .vid{
-   width: 100%;
-   height: 315px;
+   width: 19vw;
+   height: 30vh;
+   margin-bottom: 1em;
   }
+  
 
  .foot{
   background-image: linear-gradient(#0EAF00, green);
@@ -525,7 +533,8 @@ background-image: linear-gradient(to right,orange,white);
   text-align: center;
   }
 
- .phone{
+ #phone{
+  font-size: 2vw;
   line-height: 1em;
   padding: 2em;
  }
@@ -535,7 +544,8 @@ background-image: linear-gradient(to right,orange,white);
   padding: 1em;
  }
 
- .address-copyright{
+ #address-copyright{
+  font-size: 2vw;
   line-height: 1em;
   padding: 1em;
  }

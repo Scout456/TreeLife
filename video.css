@@ -193,7 +193,8 @@ body{
   background-image: url("pics/treeBody2.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:calc();
+  height: 100vh;
   
   
 
@@ -400,7 +401,6 @@ body{
  
 
   #main-video{
-  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -416,7 +416,6 @@ body{
    .foot{
   background-image: linear-gradient(#0EAF00, green);
   color: whitesmoke;
-  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;

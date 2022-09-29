@@ -197,8 +197,8 @@ body{
   background-image: url("pics/treeBody2.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 75em;
+  background-size:calc();
+  height: 100vh;
 
 }
 
@@ -412,6 +412,8 @@ form{
 
 /* Media querys -----------------------------------------------------------------------------*/
 
+
+
 @media screen and (min-width: 768px) {
 .mainContainer{
   display: flex;
@@ -421,11 +423,9 @@ form{
   margin-left: auto;
   margin-right: auto;
   width: 95%;
-  height: 10em;
+  height: 30vh;
 
-   }
-
-
+  }
 
    .hamburger-menu {
     display: none;
@@ -435,7 +435,6 @@ form{
      display: flex;
      justify-content: space-between;
      align-items: center;
-     
      padding: 1em;
     
    }
@@ -447,14 +446,13 @@ form{
 
 
      .iconImage{
-       width: 80%;
+       width: 18vw;
      }
 
    .service-emergency{
-    font-size: 1em;
+    font-size: 1.5vw;
     line-height: 1.1em;
     width: 20%;
-    
     
      
    }
@@ -469,8 +467,10 @@ form{
     gap: .5em;
     padding: 1em;
     font-size: 1.2em;
+    width: 60vw;
+    height: 30vh;
     
-    height: 7em;
+    
     
    
   }
@@ -478,7 +478,7 @@ form{
   .horiz-nav-link{
   text-decoration: none;
   color: whitesmoke;
-  padding: .5em;
+  padding: 1.1vw;
   background-color:green;
   border: 1px solid tan;
   transition: 1s;
@@ -496,25 +496,28 @@ form{
      font-weight: bold;
   }
 
+
+  .reach-us-text{
+    font-size: 3vw;
+  }
+
   
 .contact{
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  align-items: stretch;
   margin: 1em;
   gap: 1em;
   }
 
   
-.info-contact-page{
+.info-contact-page, textarea{
   background-color:#D8D8D8;
   border-radius: 5px;
   color:black;
   opacity: .9;
-  width: 80%;
-  height: 25em;
-  line-height: 1.2em;
+  font-size: 1.6vw;
+  line-height: 1.3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -522,33 +525,48 @@ form{
   
 }
 
+.customerInfo{
+  background-color: #D8D8D8;
+  opacity: .9;
+  border-radius: 5px;
+  font-size: 1.6vw;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+input{
+  font-size: 1.6vw;
+}
+
+
  .foot{
   background-image: linear-gradient(#0EAF00, green);
+  width: 100%;
   color: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 3em;
-  height: 25em;
-  padding: 1.2em;
- }
+  }
 
  #phone{
+  font-size: 2vw;
   line-height: 1em;
   padding: 2em;
  }
 
- #logoTree{
+ .logoTree{
   width: 90%;
   padding: 1em;
  }
 
  #address-copyright{
+  font-size: 2vw;
   line-height: 1em;
   padding: 1em;
  }
+
 
 
 }
