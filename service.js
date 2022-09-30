@@ -12,7 +12,7 @@ const allSections = document.querySelectorAll("section");
 
 const options = {
   root:null,
-  threshold: 0,
+  threshold: .01,
 }
 
 const sectionObserver = new IntersectionObserver(callback, options);
@@ -43,7 +43,7 @@ function callback(entries, observer){
   const curSection = document.querySelector(`.${curSectionsName}`);
 
   curSection.lastElementChild.firstElementChild.classList.remove("hidden-left");
-  /*curSection.lastElementChild.firstElementChild.classList.remove("hidden-left-right");*/
+
   curSection.lastElementChild.lastElementChild.classList.remove("hidden-right");
 
   observer.unobserve(entry.target);
