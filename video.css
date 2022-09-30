@@ -59,7 +59,7 @@ table {
   width: 250px;
   height: 100%;
   z-index: 1;
-  background-image: url("pics/treeLifePic5.jpg");
+  background-image: linear-gradient(to right, green,#0EAF00 );
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
@@ -145,7 +145,7 @@ background-image: linear-gradient(to right,orange,white);
 .nav-link {
   text-decoration: none;
   font-size: 22px;
-  color: black;
+  color: whitesmoke;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -160,7 +160,7 @@ background-image: linear-gradient(to right,orange,white);
   content: "";
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: whitesmoke;
   position: absolute;
   left: 0;
   /* Both lines are in the same spot*/
@@ -238,6 +238,11 @@ body{
   line-height: 1.2em;
   font-size:100%;
 }
+
+.iconImage{
+    margin-top: 2em;
+    width: 45vw;
+  }
 
 .horiz-nav-list{
   display: none;
@@ -323,7 +328,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 95%;
-  height: 10em;
+
 
    }
 
@@ -345,10 +350,11 @@ body{
     
    }
 
-
-     .iconImage{
-      width: 18vw
-     }
+    .iconImage{
+     width: 15vw;
+     margin-bottom: 2em;
+      }
+    
 
    .service-emergency{
     font-size: 1.5vw;
@@ -367,8 +373,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     gap: .5em;
-    padding: 1em;
-    font-size: 1.2em;
+    font-size: 1.6vw;
     width: 60vw;
     height: 7em;
     
