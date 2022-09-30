@@ -283,35 +283,20 @@ font-size: 1.1em;
   
 }
 
-.content > div{
-  width: 50%;
-  /*width 50% for two pics*/
-}
 
-.hidden-left{
-  opacity: 0;
-  transform: translateX(-100%);
-}
+/*Sets text so won't be seen*/
+.fadeIn {
+   opacity: 0;
+   transition-property: transform, opacity;
+   transition-duration: 1s;
+   transition-timing-function: linear;
+ }
+/*Shows text with JS intersection Observer*/
+ .in-view {
+     transform: none;
+     opacity: 1;
+ }
 
-
-
-.hidden-right{
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-.left-column{
-  transition: all 1.5s ease-in-out;
-  
-  
-}
-
-
-
-.right-column{
-  transition: all 1.5s ease-in-out;
-  
-}
 
 .services{
   border: 2px solid whitesmoke;

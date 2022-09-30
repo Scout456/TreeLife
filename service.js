@@ -6,46 +6,34 @@ menuIcon.addEventListener("click", () => {
 })
 
 
-/*Intersection Observer--------------------------------------------*/
+/*Intersection observer fade in*/
 
-const allSections = document.querySelectorAll("section");
+  const observerOptions = {
+       root: null,
+       threshold: 0.3,   
+   };
 
-const options = {
-  root:null,
-  threshold: .01,
+const observer = new IntersectionObserver(entries => {
+       entries.forEach(entry => {
+           if (entry.isIntersecting) {
+               entry.target.classList.add('in-view');
+               observer.unobserve(entry.target);
+           }
+       });
+   }, observerOptions);
+
+window.addEventListener('DOMContentLoaded', (event) => { 
+
+const sections =Array.from(document.getElementsByClassName('section'));
+
+for (let section of sections) {
+  observer.observe(section);
 }
 
-const sectionObserver = new IntersectionObserver(callback, options);
-
-allSections.forEach(section => {
-  sectionObserver.observe(section);
 });
 
-document.querySelectorAll(".left-column").forEach(column => {
-  column.classList.add("hidden-left");
-})
+/*---------------------------------------------------------------------------------------*/
 
 
 
-document.querySelectorAll(".right-column").forEach(column => {
-column.classList.add("hidden-right");
-})
 
-
-
-function callback(entries, observer){
-  const [entry] = entries;
-
-  if(!entry.isIntersecting) return;
-
-  const curSectionsName = entry.target.getAttribute("class");
-
-  const curSection = document.querySelector(`.${curSectionsName}`);
-
-  curSection.lastElementChild.firstElementChild.classList.remove("hidden-left");
-
-  curSection.lastElementChild.lastElementChild.classList.remove("hidden-right");
-
-  observer.unobserve(entry.target);
-
-}
