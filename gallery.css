@@ -56,9 +56,8 @@ table {
 
  body{
   background-image: url("pics/treeBody2.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size:calc();
   height: 100vh;
  
 
