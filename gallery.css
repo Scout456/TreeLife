@@ -143,7 +143,7 @@ table {
   width: 35px;
   height: 30px;
   /*background-color: red; /*Temporary background to see hamburger icon*/
-  position: fixed;
+   position: fixed;
   /* Places Hamburger icon*/
   top: 1px;
   left: 20px;
@@ -270,7 +270,6 @@ background-image: linear-gradient(to right,orange,white);
 
  .image-gallery{
   background-color:#0EAF00;
-  width: 100vw;
   padding: 1em;
  }
 
@@ -283,12 +282,14 @@ background-image: linear-gradient(to right,orange,white);
  }
 
  .fadeDown .images{
-  width: 280px;
+  width: 70vw;
   border-radius: 5px;
-  height: 230px;
+  height: 50vh;
   object-fit: cover;
   cursor: pointer;
  }
+
+
 
 
 
@@ -309,6 +310,14 @@ align-items: center;
 .no-display {
 display: none;
 }
+
+ #modal-image{
+  width: 60vw;
+  border-radius: 5px;
+  height: 80vh;
+  object-fit: cover;
+  cursor: pointer;
+ }
 
 
 /*End of modal--------------------------------------------------*/
@@ -529,10 +538,10 @@ body{
   cursor: pointer;
  }
 
- #main.image{
-  width: 40vw;
+ #modal-image{
+  width: 60vw;
   border-radius: 5px;
-  height: 60vh;
+  height: 80vh;
   object-fit: cover;
   cursor: pointer;
  }
