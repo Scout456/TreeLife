@@ -302,6 +302,24 @@ body{
  }
 
  
+  .social-media{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  
+}
+
+.fa-square-facebook, .fa-youtube, .fa-tiktok {
+  color: whitesmoke;
+}
+
+ 
+.fa-square-facebook.fa-square-facebook:hover, .fa-youtube:hover, .fa-tiktok:hover  {
+  color:rgb(211, 210, 210);
+  cursor: pointer;
+}
+
+ 
 /*Sets text so won't be seen*/
 .fadeup {
    transform: translateY(50px);
