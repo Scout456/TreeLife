@@ -57,9 +57,9 @@ table {
 /*To place dropdown menu*/
 .navbar {
   width: 250px;
-  height: 100%;
+  height: 60%;
   z-index: 1;
-  background-image: linear-gradient(to right, green,#0EAF00 );
+  background-image: linear-gradient(to right, #0EAF00, green, #095b01 );
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
@@ -88,7 +88,7 @@ table {
   /*background-color: red; /*Temporary background to see hamburger icon*/
   position: fixed;
   /* Places Hamburger icon*/
-  top: 1px;
+  top: 3px;
   left: 20px;
   cursor: pointer;
   display: flex;

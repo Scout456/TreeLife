@@ -354,7 +354,7 @@ body{
   /*background-color: red; /*Temporary background to see hamburger icon*/
   position: fixed;
   /* Places Hamburger icon*/
-  top: 1px;
+  top: 4px;
   left: 20px;
   cursor: pointer;
   display: flex;
