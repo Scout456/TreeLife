@@ -12,10 +12,12 @@
       />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@200&family=Smooch&display=swap" rel="stylesheet">     
+      <link  href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@200&family=Smooch&display=swap" rel="stylesheet" media="print" onload="this.media='all'">   
+      
+      <link rel="preload" as="image" href="https://thetreelife.netlify.app/pics/treeLifeTruck.jpg">
   
    
-      <link rel="stylesheet" href="tree.css" />
+      <link rel="stylesheet" href="tree.css" media="print" onload="this.media='all'" />
 	</head>
 	<body>
  <section>
@@ -126,10 +128,10 @@
 
 <section class="twoPicks">
  <div class="cranePick">
-  <img aria label="Picture of a crane helping take down a tree." class="cranePic" src="pics/craneRoger.jpg">
+  <img aria label="Picture of a crane helping take down a tree." class="cranePic section fadeup" src="pics/craneRoger.jpg">
  </div>
  <div class="truckTree">
-  <img aria aria-label="Picture of a Tree Life truck." class="pic-truck" src="pics/truckTreeLife.jpg">
+  <img aria aria-label="Picture of a Tree Life truck." class="pic-truck section fadeup" src="pics/truckTreeLife.jpg">
  </div>
 </section>
 
