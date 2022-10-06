@@ -318,7 +318,7 @@ display: none;
  #modal-image{
   width: 60vw;
   border-radius: 5px;
-  height: 80vh;
+  height: 50vh;
   object-fit: cover;
   cursor: pointer;
  }
@@ -539,6 +539,9 @@ body{
   background-color:#0EAF00;
   padding: 1em;
  }
+
+ 
+
 
 
 
