@@ -316,17 +316,14 @@ display: none;
 }
 
  #modal-image{
-  width: 60vw;
+  width: 70vw;
   border-radius: 5px;
-  height: 50vh;
+  height:30vh;
   object-fit: cover;
   cursor: pointer;
  }
-
-
-/*End of modal--------------------------------------------------*/
-
  
+/*End of modal--------------------------------------------------*/
 
  .foot{
   background-image: linear-gradient(#0EAF00, green);
