@@ -318,7 +318,7 @@ display: none;
  #modal-image{
   width: 70vw;
   border-radius: 5px;
-  height:30vh;
+  height: 70vh;
   object-fit: cover;
   cursor: pointer;
  }
