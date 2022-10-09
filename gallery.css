@@ -87,6 +87,7 @@ table {
 .emergencyService{
   color: red;
   font-weight: bold;
+  font-family: 'Roboto Slab';
 }
 
 .callUs{
