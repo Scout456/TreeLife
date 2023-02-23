@@ -594,7 +594,7 @@ background-image: linear-gradient(to right,orange,white);
   background-color:green;
   border: 1px solid tan;
   transition: .5s;
-  order:solid #000 3px;
+  border:solid #000 3px;
   border-top-left-radius:70% 60% ;
   border-bottom-right-radius:70% 60%;
   -moz-border-top-left-radius:70% 50%;
